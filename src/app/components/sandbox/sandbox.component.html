@@ -1,0 +1,20 @@
+<div class="chart"></div>
+
+<form>
+    <div class="form-group">
+        <label>Add random value</label>
+        <input class="btn btn-secondary" type="button" value="Randomize" (click)="randomize()">
+    </div>
+    <div class="card">
+        <div class="card-header">
+            Add a bar
+        </div>
+        <div class="card-block">
+            <div class="form-group">
+                <label>Value</label>
+                <input class="form-control" [(ngModel)]="addedValue" name="addedValue" type="number">
+            </div>
+            <input type="button" class="btn btn-secondary" value="Ajouter" (click)="addBar(addedValue)">
+        </div>
+    </div>
+</form>
